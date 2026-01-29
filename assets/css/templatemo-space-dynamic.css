@@ -147,12 +147,12 @@ body {
 }
 
 ::selection {
-  background: #03a4ed;
+  background: #2E86AB;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #03a4ed;
+  background: #2E86AB;
   color: #fff;
 }
 
@@ -189,16 +189,16 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #03a4ed;
+  color: #2E86AB;
 }
 
 .section-heading h2 span {
-  color: #fe3f40;
+  color: #28A745;
 }
 
 .main-blue-button a {
   display: inline-block;
-  background-color: #03a4ed;
+  background-color: #2E86AB;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -210,7 +210,7 @@ body {
 
 .main-red-button a {
   display: inline-block;
-  background-color: #fe3f40;
+  background-color: #28A745;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -1107,8 +1107,7 @@ Portfolio
 }
 
 .our-portfolio .hidden-content {
-  background: rgb(255,77,30);
-  background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
+  background: linear-gradient(135deg, #2E86AB 0%, #28A745 100%);
   padding: 30px;
   border-radius: 20px;
   text-align: center;

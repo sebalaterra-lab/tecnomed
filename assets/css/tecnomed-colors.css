@@ -1,0 +1,201 @@
+/* Tecnomed SRL - Medical Colors Override */
+
+/* Replace blue color #03a4ed with medical blue #2E86AB */
+.logo h4 {
+    color: #2E86AB !important;
+}
+
+.header-area .main-nav .nav li:last-child a:hover,
+.background-header .main-nav .nav li:last-child a:hover {
+    background-color: #2E86AB !important;
+}
+
+.main-banner .left-content h2 em {
+    color: #2E86AB !important;
+}
+
+#search fieldset button {
+    background-color: #2E86AB !important;
+}
+
+.about-us .services .item .right-text h4 {
+    color: #ffffff !important;
+}
+
+form#contact button {
+    background-color: #2E86AB !important;
+}
+
+/* Replace red color #fe3f40 with medical green #28A745 */
+.main-white-button a {
+    color: #28A745 !important;
+}
+
+.background-header .main-nav .nav li:hover a,
+.background-header .nav li a.active {
+    color: #28A745 !important;
+}
+
+.logo h4 span {
+    color: #28A745 !important;
+}
+
+.header-area .main-nav .nav li:hover a,
+.header-area .main-nav .nav li a.active {
+    color: #28A745 !important;
+}
+
+.header-area .main-nav .nav li.submenu ul li a:hover {
+    color: #28A745 !important;
+}
+
+.header-area.header-sticky .nav li a.active {
+    color: #28A745 !important;
+}
+
+.header-area.header-sticky .nav li a:hover,
+.header-area.header-sticky .nav li a.active {
+    color: #28A745 !important;
+}
+
+.header-area .main-nav .nav li a:hover {
+    color: #28A745 !important;
+}
+
+.menu-trigger span:after,
+.menu-trigger span:before {
+    background: #28A745 !important;
+}
+
+.main-banner .left-content h6 {
+    color: #28A745 !important;
+}
+
+.main-banner .left-content h2 span {
+    color: #28A745 !important;
+}
+
+#search fieldset input {
+    color: #28A745 !important;
+}
+
+form#contact button:hover {
+    background-color: #28A745 !important;
+}
+
+footer p a {
+    color: #28A745 !important;
+}
+
+/* Additional medical-themed colors */
+.clients-section h4 {
+    color: #2E86AB !important;
+}
+
+.clients-section ul li {
+    color: #666 !important;
+}
+
+/* Progress bars medical colors */
+.progress-skill-bar .filled-bar {
+    background: linear-gradient(to right, #2E86AB 0%, #28A745 100%) !important;
+}
+
+/* Interactive Clients Section */
+.client-item:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(46, 134, 171, 0.15) !important;
+    background: #ffffff !important;
+}
+
+.client-item:nth-child(even) {
+    border-left-color: #28A745 !important;
+}
+
+.client-item:nth-child(odd) {
+    border-left-color: #2E86AB !important;
+}
+
+/* Company Description Styling */
+.company-description h3 {
+    position: relative;
+}
+
+.company-description h3:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #2E86AB, #28A745);
+    border-radius: 2px;
+}
+
+.company-description strong {
+    color: #2E86AB;
+}
+
+/* Responsive adjustments for clients grid */
+@media (max-width: 768px) {
+    .clients-grid {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+    
+    .client-item {
+        padding: 12px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .company-description {
+        text-align: center;
+    }
+    
+    .company-description h3:after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+/* 5-column layout optimization for products section */
+@media (min-width: 992px) {
+    .our-portfolio .col-lg-2 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (max-width: 991px) {
+    .our-portfolio .col-lg-2 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media (max-width: 767px) {
+    .our-portfolio .col-lg-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Ensure equal height for product items */
+.our-portfolio .item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-portfolio .showed-content {
+    flex-grow: 1;
+}
+
+/* Add variety to portfolio items with alternating gradients */
+.our-portfolio .item:nth-child(even) .hidden-content {
+    background: linear-gradient(135deg, #28A745 0%, #2E86AB 100%) !important;
+}
+
+.our-portfolio .item:nth-child(odd) .hidden-content {
+    background: linear-gradient(135deg, #2E86AB 0%, #28A745 100%) !important;
+}

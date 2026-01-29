@@ -1,0 +1,2 @@
+- inserire tutte le pagine di prodotti
+- cambiare immagini e sfondi

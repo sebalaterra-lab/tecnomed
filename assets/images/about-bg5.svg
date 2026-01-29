@@ -1,0 +1,10 @@
+<svg width="526" height="312" viewBox="0 0 526 312" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path id="shape-darkblue-wave" fill-rule="evenodd" clip-rule="evenodd" d="M526 0V312H0C8.82252 285.406 33.0985 262.289 59.4461 245.483C100.951 219.015 150.311 202.021 201.342 196.631C232.041 193.385 264.852 193.852 291.191 179.7C329.177 159.285 340.271 116.563 362.611 82.8611C395.542 33.171 460.507 1.72453 526 0Z" fill="url(#paint0_linear_41_264)"/>
+<defs>
+<linearGradient id="paint0_linear_41_264" x1="-27.9569" y1="212.742" x2="163.617" y2="537.085" gradientUnits="userSpaceOnUse">
+<stop stop-color="#365BFF"/>
+<stop offset="1" stop-color="#000960"/>
+<stop offset="1" stop-color="#000960"/>
+</linearGradient>
+</defs>
+</svg>

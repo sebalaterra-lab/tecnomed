@@ -944,15 +944,15 @@ About Us Style
 */
 
 #about {
-  margin-top: 120px;
+  margin-top: 10px;
 }
 
 .about-us {
-  background-image: url(../images/about-bg.png);
+  background-image: url(../images/about-bg8.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 140px 0px 120px 0px;
+  padding: 200px 0px 120px 0px;
 }
 
 .about-us .left-image {
@@ -1288,7 +1288,7 @@ contact
 
 .contact-us {
   padding: 160px 0px;
-  background-image: url(../images/contact-bg.png);
+  background-image: url(../images/about-bg8.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

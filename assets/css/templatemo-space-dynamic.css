@@ -1667,6 +1667,11 @@ responsive
   .phone-info h4 span i {
     margin-left: 0px;
   }
+  .contact-us .section-heading h2,
+  .contact-us .section-heading h2 em,
+  .contact-us .section-heading h2 span {
+    margin-top: 120px;
+  }
 }
 
 @media (max-width: 576px) {

@@ -110,6 +110,44 @@
 
 
 
+	// Contact Form Handler
+	$('#contact').on('submit', function(e) {
+		e.preventDefault();
+		
+		var name = $('#name').val();
+		var surname = $('#surname').val();
+		var email = $('#email').val();
+		var message = $('#message').val();
+		
+		// Validazione base
+		if(!name || !surname || !email || !message) {
+			alert('Per favore, compila tutti i campi');
+			return false;
+		}
+		
+		// Invia i dati via AJAX
+		$.ajax({
+			type: 'POST',
+			url: 'send-message.php',
+			data: {
+				name: name,
+				surname: surname,
+				email: email,
+				message: message
+			},
+			success: function(response) {
+				alert('Messaggio inviato con successo!');
+				$('#contact')[0].reset();
+			},
+			error: function(xhr, status, error) {
+				alert('Errore nell\'invio del messaggio. Riprova più tardi.');
+				console.error('Error:', error);
+			}
+		});
+		
+		return false;
+	});
+
 	// Page loading animation
 	 $(window).on('load', function() {
 

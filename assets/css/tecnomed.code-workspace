@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "tecnomed",
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"kiroAgent.configureMCP": "Disabled"
+	}
+}

@@ -948,11 +948,11 @@ About Us Style
 }
 
 .about-us {
-  background-image: url(../images/about-bg8.svg);
+  background-image: url(../images/about-bg8-rotate2.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 200px 0px 120px 0px;
+  padding: 50px 0px 160px 0px;
 }
 
 .about-us .left-image {
@@ -1023,15 +1023,15 @@ Services Style
 }
 
 .our-services .first-bar span {
-  left: 69%;
+  left: 90%;
 }
 
 .our-services .second-bar span {
-  left: 81%;
+  left: 90%;
 }
 
 .our-services .third-bar span {
-  left: 88%;
+  left: 90%;
 }
 
 .our-services .progress-skill-bar h4 {
@@ -1061,15 +1061,15 @@ Services Style
 }
 
 .our-services .first-bar .filled-bar {
-  width: 71%;
+  width: 99%;
 }
 
 .our-services .second-bar .filled-bar {
-  width: 83%;
+  width: 99%;
 }
 
 .our-services .third-bar .filled-bar {
-  width: 90%;
+  width: 99%;
 }
 
 
@@ -1087,7 +1087,7 @@ Portfolio
 .our-portfolio .section-heading h2 {
   text-align: center;
   margin: 0px 90px 0px 90px;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   position: relative;
   z-index: 1;
 }
@@ -1108,7 +1108,7 @@ Portfolio
 
 .our-portfolio .hidden-content {
   background: linear-gradient(135deg, #2E86AB 0%, #28A745 100%);
-  padding: 30px;
+  padding: 40px 35px;
   border-radius: 20px;
   text-align: center;
   opacity: 0;
@@ -1117,6 +1117,14 @@ Portfolio
   position: absolute;
   z-index: 2;
   transition: all 0.5s;
+  width: 95%;
+  left: 2.5%;
+  right: 2.5%;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-portfolio .hidden-content:after {
@@ -1134,14 +1142,20 @@ Portfolio
 }
 
 .our-portfolio .hidden-content h4 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 20px;
+  margin: 0px 0px 15px 0px;
+  line-height: 1.3;
 }
 
 .our-portfolio .hidden-content p {
   color: #fff;
+  font-size: 13px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0px;
 }
 
 .our-portfolio .showed-content {
@@ -1150,14 +1164,38 @@ Portfolio
   z-index: 3;
   background-color: #fff;
   text-align: center;
-  padding: 50px;
+  padding: 60px 40px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
   transition: all 0.5s;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-portfolio .showed-content img {
-  max-width: 100px;
+  max-width: 180px;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+.our-portfolio .showed-content h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin: 15px 0px;
+  line-height: 1.4;
+}
+
+.our-portfolio .showed-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0px;
 }
 
 
@@ -1222,7 +1260,7 @@ Blog
 }
 
 .our-blog .left-image ul li i {
-  color: #ff4d61;
+  color: #2E86AB;
   font-size: 16px;
   margin-right: 8px;
 }
@@ -1261,7 +1299,7 @@ Blog
 }
 
 .our-blog .right-list .left-content span i {
-  color: #ff4d61;
+  color: #2E86AB;
   font-size: 16px;
   margin-right: 8px;
 }
@@ -1287,7 +1325,7 @@ contact
 */
 
 .contact-us {
-  padding: 160px 0px;
+  padding-block: 280px 0px;
   background-image: url(../images/about-bg8.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -1307,12 +1345,18 @@ contact
 
 .phone-info {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .phone-info h4 {
   font-size: 20px;
   font-weight: 700;
   color: #fff;
+  margin-bottom: 30px;
+}
+
+.phone-info h4:last-child {
+  margin-bottom: 0;
 }
 
 .phone-info h4 span i {
@@ -1323,7 +1367,7 @@ contact
   line-height: 46px;
   background-color: #fff;
   border-radius: 50%;
-  color: #ff3b2c;
+  color: #2E86AB;
   font-size: 22px;
   margin-left: 30px;
   margin-right: 15px;

@@ -175,8 +175,8 @@ footer p a {
 
 @media (max-width: 767px) {
     .our-portfolio .col-lg-2 {
-        flex: 0 0 50%;
-        max-width: 50%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
@@ -198,4 +198,23 @@ footer p a {
 
 .our-portfolio .item:nth-child(odd) .hidden-content {
     background: linear-gradient(135deg, #2E86AB 0%, #28A745 100%) !important;
+}
+
+/* Mobile portfolio interaction - disable hover behavior on touch devices */
+@media (max-width: 767px) {
+    .our-portfolio .item:hover .hidden-content,
+    .our-portfolio .item:hover .showed-content {
+        /* Disable hover animation on mobile */
+        top: auto !important;
+        opacity: auto !important;
+        visibility: auto !important;
+    }
+
+    .our-portfolio .item {
+        pointer-events: none;
+    }
+
+    .our-portfolio .item a {
+        pointer-events: auto;
+    }
 }

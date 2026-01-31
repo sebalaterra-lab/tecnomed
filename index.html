@@ -259,7 +259,7 @@ https://templatemo.com/tm-562-space-dynamic
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-2 col-md-4 col-sm-6" style="margin-bottom: 30px;">
+        <div class="col-12 col-md-6 col-lg-2" style="margin-bottom: 30px;">
           <a href="aeonmed.html">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="hidden-content">
@@ -272,7 +272,7 @@ https://templatemo.com/tm-562-space-dynamic
             </div>
           </a>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6" style="margin-bottom: 30px;">
+        <div class="col-12 col-md-6 col-lg-2" style="margin-bottom: 30px;">
           <a href="edan.html">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
               <div class="hidden-content">
@@ -285,7 +285,7 @@ https://templatemo.com/tm-562-space-dynamic
             </div>
           </a>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6" style="margin-bottom: 30px;">
+        <div class="col-12 col-md-6 col-lg-2" style="margin-bottom: 30px;">
           <a href="bexen-cardio.html">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
               <div class="hidden-content">
@@ -298,7 +298,7 @@ https://templatemo.com/tm-562-space-dynamic
             </div>
           </a>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6" style="margin-bottom: 30px;">
+        <div class="col-12 col-md-6 col-lg-2" style="margin-bottom: 30px;">
           <a href="siare.html">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
               <div class="hidden-content">
@@ -311,7 +311,7 @@ https://templatemo.com/tm-562-space-dynamic
             </div>
           </a>
         </div>
-        <div class="col-lg-2 col-md-4 col-sm-6" style="margin-bottom: 30px;">
+        <div class="col-12 col-md-6 col-lg-2" style="margin-bottom: 30px;">
           <a href="spencer.html">
             <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.7s">
               <div class="hidden-content">
@@ -471,6 +471,46 @@ https://templatemo.com/tm-562-space-dynamic
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
+
+  <script>
+    // Mobile portfolio interaction handler
+    $(document).ready(function() {
+      if ($(window).width() < 768) {
+        // Mobile behavior
+        $('.our-portfolio .item').each(function() {
+          var $item = $(this);
+          var $link = $item.parent('a');
+          
+          // Prevent default navigation on first click
+          $link.on('click', function(e) {
+            if (!$item.hasClass('mobile-expanded')) {
+              e.preventDefault();
+              // Show hidden content
+              $item.addClass('mobile-expanded');
+              $item.find('.hidden-content').css({
+                'top': '-100px',
+                'opacity': '1',
+                'visibility': 'visible'
+              });
+              $item.find('.showed-content').css('top', '90px');
+            }
+            // On second click, allow navigation (default behavior)
+          });
+          
+          // Reset state on scroll to improve UX
+          $(document).on('scroll', function() {
+            $item.removeClass('mobile-expanded');
+            $item.find('.hidden-content').css({
+              'top': '0',
+              'opacity': '0',
+              'visibility': 'hidden'
+            });
+            $item.find('.showed-content').css('top', '0px');
+          });
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>

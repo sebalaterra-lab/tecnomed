@@ -119,6 +119,21 @@ footer p a {
 /* Company Description Styling */
 .company-description h3 {
     position: relative;
+    color: #000000 !important;
+}
+
+.company-description p {
+    color: #000000 !important;
+}
+
+@media (min-width: 768px) {
+    .company-description h3 {
+        color: #ffffff !important;
+    }
+    
+    .company-description p {
+        color: #ffffff !important;
+    }
 }
 
 .company-description h3:after {
@@ -216,5 +231,47 @@ footer p a {
 
     .our-portfolio .item a {
         pointer-events: auto;
+    }
+}
+
+/* ===== Product Chips List Styling ===== */
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.product-chip {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    color: #2E86AB;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.product-chip:hover {
+    background: #2E86AB;
+    color: #ffffff;
+    border-color: #2E86AB;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(46, 134, 171, 0.2);
+}
+
+@media (max-width: 768px) {
+    .products-list {
+        gap: 10px;
+    }
+    
+    .product-chip {
+        padding: 8px 14px;
+        font-size: 13px;
     }
 }

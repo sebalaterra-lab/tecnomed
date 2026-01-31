@@ -1,2 +1,3 @@
 - inserire tutte le pagine di prodotti
-- cambiare immagini e sfondi
+- cambiare immagini e sfondi anche nella pagine indentate
+- prendere parte di contenuto dal video dentro il sito ufficiale
